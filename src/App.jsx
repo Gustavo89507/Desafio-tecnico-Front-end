@@ -136,7 +136,7 @@ mostrarModulos)}
 element={<ListaClientes clientes={clientes} aoExcluir={excluirCliente}/>} />
  <Route
  path="/clientes/cadastrar"
-element={<CadastroCliente aoCadastrar={adicionarCliente} />}/>
+element={<CadastroCliente clientes={clientes} aoCadastrar={adicionarCliente} />}/>
 <Route
  path="/clientes/editar/:id"
  element={<EditarCliente clientes={clientes} aoAlterar={alterarCliente}/>}/>
@@ -148,7 +148,7 @@ element={<CadastroCliente aoCadastrar={adicionarCliente} />}/>
  element={<ListaFuncionarios funcionarios = {funcionarios} aoExcluir={excluirFuncionario} />}/>
  <Route
  path="/funcionarios/cadastrar"
- element={<CadastroFuncionario aoCadastrar={adicionarFuncionario} />}/>
+ element={<CadastroFuncionario funcionarios={funcionarios} aoCadastrar={adicionarFuncionario} />}/>
  <Route
  path="/funcionarios/editar/:id"
  element={<EditarFuncionario funcionarios={funcionarios} aoAlterar={alterarFuncionario}/>}/>
